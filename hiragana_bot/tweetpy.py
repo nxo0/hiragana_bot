@@ -21,7 +21,8 @@ def main():
     char_list = list(str)
 #(char_list, 6)の6の部分が文字数なのでここを好きな文字数に。
     output = random.sample(char_list, 6)
-    sta = ""
-    for i in output:
-        sta += i
+    sta = "".join(output)
     return sta
+
+if __name__ == "__main__":
+    print(main())
